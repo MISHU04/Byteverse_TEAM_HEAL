@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <style>
+        body{
+            background-color: rgb(229, 240, 242);
+            color: rgb(143, 21, 119);
+            font-size: 20px;
+            font-style: oblique;
+            }
+            h1{
+                background-color: rgb(32, 200, 200);
+                text-align: center;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            p{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            h2{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+        </style>
+</head>
+<body>
+    <form action="">
+        <h1>Patient profile form</h1>
+        <h2>Contact Info</h2>
+        <p>Required fields are followed by *</p>
+        <p>First Name: *<input type="text"placeholder="enter your name" name="fname" id="user_fname" required></p>
+        <p>Last Name: <input type="text" name="lname" id="user_lname"></p>
+        <P>DATE OF BIRTH *:
+            <input type="date" name="dob" id="dob">
+        </P>
+        <p>Aadhar card number: *
+            <input type="number" placeholder="enter your aadhar number" id="adh" name="aadhar"> 
+        </p>
+        <fieldset>
+           Gender:*
+         <P>
+            Male<input type="radio" name="gender" id="gender">
+            Female<input type="radio" name="gender" id="gender">
+            Others<input type="radio" name="gender" id="gender">
+         </P>
+        </fieldset>
+         <p>Blood group:
+            <select name="blood_group" id="blood_group">
+                <option value="">--Choose your blood group--</option>
+                <option value="O+">O+</option>
+                <option value="A+">A+</option>
+                <option value="B+">B+</option>
+                <option value="AB+">AB+</option>
+                <option value="A-">A-</option>
+                <option value="B-">B-</option>
+                <option value="O-">O-</option>
+                <option value="AB-">AB-</option>
+            </select>
+         </p>
+        
+        <p>Address:  <textarea name="address" id="adress" cols="50" rows="3"></textarea></p>
+        <p>E-mail:*<input type="email" name="email" placeholder="enter your email id" id="user_email"></p>
+        <p>Pincode: <input type="number" name="pincode" id="area_pincode"></p>
+        <p>Medical history: <textarea name="medical" id="history" cols="50" placeholder="if any" rows="5"></textarea>
+        </p>
+    <input type="submit" value="submit">
+    </form>
+</body>
+</html>

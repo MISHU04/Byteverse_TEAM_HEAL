@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Information</title>
+    <style>
+        h1{
+            background-color: rgb(232, 174, 67);
+            color: rgb(20, 42, 82);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            color: rgb(84, 149, 84);
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Doctor's Profile</h1>
+        
+        <p>Required fields are followed by *</p>
+        <p>First Name: *<input type="text" placeholder="Enter your name" name="fname" id="user_fname" required></p>
+        <p>Last Name: <input type="text" name="lname" id="user_lname"></p>
+        <p>Email: *<input type="text" name="email" id="user_mail_address" placeholder="Enter your mail" ></p>
+        <p>Specification: *<input type="text" name="speacialist" id="user_speacification" placeholder="Enter your specification"></p>
+        
+        <fieldset>
+            <legend>Gender*</legend>
+         <P>
+            Male<input type="radio" name="gender" id="gender">
+            Female<input type="radio" name="gender" id="gender">
+            Others<input type="radio" name="gender" id="gender">
+         </P>
+        </fieldset><br>
+        <p>Education background: *<textarea name="text" id="user_qualification" cols="100" rows="5" placeholder="Enter your education background"></textarea></p>
+            <p>Achievement:  <textarea name="achievement"id="achievement"cols="50" rows="3" placeholder="Enter your achievement"></textarea></p>
+                
+                <input type="submit"value="Submit">
+                </form>
+                </body>
+                </html>
+            
